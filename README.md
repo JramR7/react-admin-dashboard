@@ -7,6 +7,9 @@ https://www.figmafreebies.com/download/figma-admin-dashboard-ui-kit/
 
 Although the code has been totally refactored, in order to use of functional components, hooks and integrated 100% with react-router, you can still find the original project post here "Building a UI from scratch, based on a design with ReactJS" [here](POST.md) or [here](https://dev.to/llorentegerman/building-a-ui-from-scratch-based-on-a-design-with-reactjs-3l1e).
 
+## Install 
+npm install or yarn install
+
 ## Folder Structure
 
 ### base folder: /src:
