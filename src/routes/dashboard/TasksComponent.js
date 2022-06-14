@@ -85,8 +85,8 @@ function TasksComponent(props) {
             const newItems = [...prev];
             newItems.push({
                 title: newItemTitle,
-                checked: false,
-                tag: getNextTag()
+                checked: newItems.length < 4 ? false : true,
+                tag: newItems.length < 6 ? getNextTag() : TAGS['DEFAULT']
             });
             return newItems;
         });
