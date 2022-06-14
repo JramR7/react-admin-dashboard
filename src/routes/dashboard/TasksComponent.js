@@ -6,7 +6,6 @@ import CardComponent from 'components/cards/CardComponent';
 
 const useStyles = createUseStyles((theme) => ({
     addButton: {
-        backgroundColor: theme.color.lightGrayishBlue,
         color: theme.color.grayishBlue2,
         fontSize: '20px !important',
         padding: '7px !important'
@@ -45,6 +44,7 @@ const TAGS = {
 function TasksComponent(props) {
     const theme = useTheme();
     const classes = useStyles({ theme });
+    const [newItemTitle, setNewItemTitle] = useState('');
     const [items, setItems] = useState([
         { title: 'Finish ticket update', checked: false, tag: TAGS.URGENT },
         {
@@ -54,6 +54,10 @@ function TasksComponent(props) {
         },
         { title: 'Update ticket report', checked: true, tag: TAGS.DEFAULT }
     ]);
+
+    function handleNewInputChange(event) {
+        setNewItemTitle(event.target.value);
+    }
 
     function onCheckboxClick(index) {
         setItems((prev) => {
@@ -80,7 +84,7 @@ function TasksComponent(props) {
         setItems((prev) => {
             const newItems = [...prev];
             newItems.push({
-                title: `Task ${newItems.length + 1}`,
+                title: newItemTitle,
                 checked: false,
                 tag: getNextTag()
             });
@@ -109,9 +113,15 @@ function TasksComponent(props) {
             subtitle='Today'
             items={[
                 <Row horizontal='space-between' vertical='center'>
-                    <span className={[classes.itemTitle, classes.greyTitle].join(' ')}>
-                        Create new task
-                    </span>
+                    <input
+                        type='text'
+                        name='name'
+                        onChange={handleNewInputChange}
+                        value={newItemTitle}
+                        placeholder={'Create new task'}
+                        className={[classes.itemTitle, classes.input].join(' ')}
+                    />
+
                     {renderAddButton()}
                 </Row>,
                 ...items.map((item, index) => (

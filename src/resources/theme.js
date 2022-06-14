@@ -1,3 +1,5 @@
+import { nominalTypeHack } from 'prop-types';
+
 const color = {
     brightBlue: '#3498db',
     darkGrayishBlue: '#8b8d94',
@@ -39,10 +41,11 @@ const typography = {
         }
     },
     itemTitle: {
-        fontWeight: 600,
+        fontWeight: 800,
         fontSize: 14,
         lineHeight: '20px',
-        letterSpacing: 0.2
+        letterSpacing: 2,
+        border: 'none'
     },
     title: {
         fontWeight: 'bold',
