@@ -19,7 +19,8 @@ const useStyles = createUseStyles({
     },
     miniCardContainer: {
         flexGrow: 1,
-        marginRight: 30,
+        marginRight: 50,
+        marginTop: 40,
         '@media (max-width: 768px)': {
             marginTop: 30,
             maxWidth: 'none'
@@ -49,20 +50,9 @@ function DashboardComponent() {
     const classes = useStyles();
     return (
         <Column>
-            {/* <Row
-                className={classes.cardsContainer}
-                wrap
-                flexGrow={1}
-                horizontal='space-between'
-                breakpoints={{ 768: 'column' }}
-            >
-                <Row
-                    className={classes.cardRow}
-                    wrap
-                    flexGrow={1}
-                    horizontal='space-between'
-                    breakpoints={{ 384: 'column' }}
-                >
+            {/* add wrap back */}
+            <Row className={classes.cardsContainer} flexGrow={1} horizontal='space-between'>
+                <Row className={classes.cardRow} flexGrow={1} horizontal='space-between'>
                     <MiniCardComponent
                         className={classes.miniCardContainer}
                         title='Unresolved'
@@ -74,13 +64,7 @@ function DashboardComponent() {
                         value='16'
                     />
                 </Row>
-                <Row
-                    className={classes.cardRow}
-                    wrap
-                    flexGrow={1}
-                    horizontal='space-between'
-                    breakpoints={{ 384: 'column' }}
-                >
+                <Row className={classes.cardRow} flexGrow={1} horizontal='space-between'>
                     <MiniCardComponent
                         className={classes.miniCardContainer}
                         title='Open'
@@ -92,7 +76,7 @@ function DashboardComponent() {
                         value='64'
                     />
                 </Row>
-            </Row> */}
+            </Row>
             <div className={classes.todayTrends}>
                 <TodayTrendsComponent />
             </div>

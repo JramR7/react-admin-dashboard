@@ -9,7 +9,7 @@ const useStyles = createUseStyles((theme) => ({
         borderRadius: 4,
         cursor: 'pointer',
         maxWidth: 350,
-        padding: '16px 32px 16px 32px',
+        padding: '16px 52px 16px 32px',
         '&:hover': {
             borderColor: theme.color.lightBlue,
             '&:nth-child(n) > span': {
@@ -27,9 +27,8 @@ const useStyles = createUseStyles((theme) => ({
     value: {
         color: theme.color.veryDarkGrayishBlue,
         fontWeight: 'bold',
-        fontSize: 40,
+        fontSize: 26,
         letterSpacing: '1px',
-        lineHeight: '50px',
         textAlign: 'center'
     }
 }));
