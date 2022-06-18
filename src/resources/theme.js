@@ -39,10 +39,11 @@ const typography = {
         }
     },
     itemTitle: {
-        fontWeight: 600,
+        fontWeight: 800,
         fontSize: 14,
         lineHeight: '20px',
-        letterSpacing: 0.2
+        letterSpacing: 0.2,
+        border: 'none'
     },
     title: {
         fontWeight: 'bold',

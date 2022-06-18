@@ -5,8 +5,8 @@ import LineChart from 'react-svg-line-chart';
 
 const data = [];
 
-for (let x = 1; x <= 24; x++) {
-    data.push({ x: x, y: Math.floor(Math.random() * 100) });
+for (let x = 1; x <= 20; x++) {
+    data.push({ x: x, y: Math.floor(Math.random() * 65) });
 }
 
 const useStyles = createUseStyles((theme) => ({
@@ -107,7 +107,7 @@ function TodayTrendsComponent() {
             flexGrow={1}
             className={classes.container}
             horizontal='center'
-            // breakpoints={{ 1024: 'column' }}
+            breakpoints={{ 1024: 'column' }}
         >
             <Column
                 wrap
@@ -121,7 +121,10 @@ function TodayTrendsComponent() {
                         <span className={classes.graphTitle}>Today’s trends</span>
                         <span className={classes.graphSubtitle}>as of 25 May 2019, 09:41 PM</span>
                     </Column>
-                    {renderLegend(theme.color.lightBlue, 'Today')}
+                    <div />
+                    <div style={{ width: '40%' }} />
+                    {renderLegend(theme.color.lightGrayishBlue2, 'Today')}
+                    {renderLegend(theme.color.lightBlue, 'Yesterday')}
                 </Row>
                 <div className={classes.graphContainer}>
                     <LineChart
@@ -136,13 +139,13 @@ function TodayTrendsComponent() {
             <Column className={classes.separator} breakpoints={{ 1024: { display: 'none' } }}>
                 <div />
             </Column>
-            {/* <Column flexGrow={3} flexBasis='342px' breakpoints={{ 1024: classes.stats }}>
+            <Column flexGrow={3} flexBasis='342px' breakpoints={{ 1024: classes.stats }}>
                 {renderStat('Resolved', '449')}
                 {renderStat('Received', '426')}
                 {renderStat('Average first response time', '33m')}
                 {renderStat('Average response time', '3h 8m')}
                 {renderStat('Resolution within SLA', '94%')}
-            </Column> */}
+            </Column>
         </Row>
     );
 }

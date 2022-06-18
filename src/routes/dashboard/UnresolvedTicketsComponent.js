@@ -19,7 +19,11 @@ function UnresolvedTicketsComponent({ containerStyles }) {
 
     function renderStat(title, value) {
         return (
-            <Row horizontal='space-between' vertical='center'>
+            <Row
+                horizontal='space-between'
+                vertical='center'
+                breakpoints={{ 426: { display: title === 'Pending' ? 'none' : 'flex' } }}
+            >
                 <span className={classes.itemTitle}>{title}</span>
                 <span className={[classes.itemTitle, classes.itemValue].join(' ')}>{value}</span>
             </Row>
@@ -34,10 +38,10 @@ function UnresolvedTicketsComponent({ containerStyles }) {
             subtitle='Group:'
             subtitleTwo='Support'
             items={[
-                renderStat('Waiting on Feature Request', 4238),
-                renderStat('Awaiting Customer Response', 1005),
-                renderStat('Awaiting Developer Fix', 914),
-                renderStat('Pending', 281)
+                renderStat('Waiting on Feature Request', 4238.0),
+                renderStat('Awaiting Customer Response', 1005.0),
+                renderStat('Awaiting Developer Fix', 914.0),
+                renderStat('Pending', 281.0)
             ]}
         />
     );
