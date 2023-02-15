@@ -114,20 +114,16 @@ function HeaderComponent() {
                         label={<IconBell />}
                         options={[
                             {
-                                label: 'Notification #1',
-                                onClick: () => console.log('Notification #1')
+                                label: 'New notification +1',
+                                onClick: () => console.log('New notification +1')
                             },
                             {
-                                label: 'Notification #2',
-                                onClick: () => console.log('Notification #2')
+                                label: 'New notification +2',
+                                onClick: () => console.log('New notification +2')
                             },
                             {
-                                label: 'Notification #3',
-                                onClick: () => console.log('Notification #3')
-                            },
-                            {
-                                label: 'Notification #4',
-                                onClick: () => console.log('Notification #4')
+                                label: 'New notification +3',
+                                onClick: () => console.log('New notification +3')
                             }
                         ]}
                         position={{
