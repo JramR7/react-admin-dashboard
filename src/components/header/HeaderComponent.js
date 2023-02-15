@@ -68,10 +68,10 @@ function HeaderComponent() {
     let title;
     switch (true) {
         case currentItem === SLUGS.dashboard:
-            title = 'Dashboard Test de Ana';
+            title = 'Dashboard Test';
             break;
         case [SLUGS.overview, SLUGS.overviewTwo, SLUGS.overviewThree].includes(currentItem):
-            title = 'Vista';
+            title = 'Overview';
             break;
         case currentItem === SLUGS.tickets:
             title = 'Tickets';
@@ -140,7 +140,7 @@ function HeaderComponent() {
                 <DropdownComponent
                     label={
                         <>
-                            <span className={classes.name}>Ana</span>
+                            <span className={classes.name}>Germán Llorente</span>
                             <img
                                 src='https://avatars3.githubusercontent.com/u/21162888?s=460&v=4'
                                 alt='avatar'
