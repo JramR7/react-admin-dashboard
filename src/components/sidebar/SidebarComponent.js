@@ -55,7 +55,7 @@ function SidebarComponent() {
             <MenuItem
                 id={SLUGS.overview}
                 items={[SLUGS.overviewTwo, SLUGS.overviewThree]}
-                title='Overview'
+                title='Mauro was here'
                 icon={IconOverview}
             >
                 <MenuItem
@@ -89,7 +89,7 @@ function SidebarComponent() {
             <MenuItem
                 id={SLUGS.ideas}
                 items={[SLUGS.ideasTwo, SLUGS.ideasThree]}
-                title='Ideas'
+                title='quiz'
                 icon={IconIdeas}
             >
                 <MenuItem
