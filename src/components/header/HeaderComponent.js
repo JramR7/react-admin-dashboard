@@ -25,7 +25,7 @@ const useStyles = createUseStyles((theme) => ({
     },
     name: {
         ...theme.typography.itemTitle,
-        textAlign: 'right',
+        textAlign: 'left',
         '@media (max-width: 768px)': {
             display: 'none'
         }
