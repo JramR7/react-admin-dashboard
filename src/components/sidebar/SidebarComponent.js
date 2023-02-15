@@ -48,33 +48,33 @@ function SidebarComponent() {
             </div>
             <MenuItem
                 id={SLUGS.dashboard}
-                title='Dashboard'
+                title='Panel'
                 icon={IconSubscription}
                 onClick={() => onClick(SLUGS.dashboard)}
             />
             <MenuItem
                 id={SLUGS.overview}
                 items={[SLUGS.overviewTwo, SLUGS.overviewThree]}
-                title='vista'
+                title='Vista'
                 icon={IconOverview}
             >
                 <MenuItem
                     id={SLUGS.overview}
-                    title='Sub Item 1'
+                    title='Sub Objeto 1'
                     level={2}
                     icon={IconAgents}
                     onClick={() => onClick(SLUGS.overview)}
                 />
                 <MenuItem
                     id={SLUGS.overviewTwo}
-                    title='Sub Item 2'
+                    title='Sub Objeto 2'
                     level={2}
                     icon={IconContacts}
                     onClick={() => onClick(SLUGS.overviewTwo)}
                 />
                 <MenuItem
                     id={SLUGS.overviewThree}
-                    title='Sub Item 3'
+                    title='Sub Objeto 3'
                     level={2}
                     icon={IconArticles}
                     onClick={() => onClick(SLUGS.overviewThree)}
@@ -82,7 +82,7 @@ function SidebarComponent() {
             </MenuItem>
             <MenuItem
                 id={SLUGS.tickets}
-                title='Tickets'
+                title='Tiquetes'
                 icon={IconTickets}
                 onClick={() => onClick(SLUGS.tickets)}
             />
@@ -94,21 +94,21 @@ function SidebarComponent() {
             >
                 <MenuItem
                     id={SLUGS.ideas}
-                    title='Sub Item 1'
+                    title='Sub Objeto 1'
                     level={2}
                     icon={IconAgents}
                     onClick={() => onClick(SLUGS.ideas)}
                 />
                 <MenuItem
                     id={SLUGS.ideasTwo}
-                    title='Sub Item 2'
+                    title='Sub Objeto 2'
                     level={2}
                     icon={IconContacts}
                     onClick={() => onClick(SLUGS.ideasTwo)}
                 />
                 <MenuItem
                     id={SLUGS.ideasThree}
-                    title='Sub Item 3'
+                    title='Sub Objeto 3'
                     level={2}
                     icon={IconArticles}
                     onClick={() => onClick(SLUGS.ideasThree)}
@@ -116,37 +116,37 @@ function SidebarComponent() {
             </MenuItem>
             <MenuItem
                 id={SLUGS.contacts}
-                title='Contacts'
+                title='Contactos'
                 icon={IconContacts}
                 onClick={() => onClick(SLUGS.contacts)}
             />
             <MenuItem
                 id={SLUGS.agents}
-                title='Agents'
+                title='Agentes'
                 icon={IconAgents}
                 onClick={() => onClick(SLUGS.agents)}
             />
             <MenuItem
                 id={SLUGS.articles}
-                title='Articles'
+                title='Articulos'
                 icon={IconArticles}
                 onClick={() => onClick(SLUGS.articles)}
             />
             <MenuItem
                 id={SLUGS.subscription}
-                title='Subscription'
+                title='Suscripción'
                 icon={IconSubscription}
                 onClick={() => onClick(SLUGS.subscription)}
             />
             <div className={classes.separator}></div>
             <MenuItem
                 id={SLUGS.settings}
-                title='Settings'
+                title='Configuraciones'
                 icon={IconSettings}
                 onClick={() => onClick(SLUGS.settings)}
             />
 
-            <MenuItem id='logout' title='Logout' icon={IconLogout} onClick={logout} />
+            <MenuItem id='logout' title='Salir' icon={IconLogout} onClick={logout} />
         </Menu>
     );
 }
