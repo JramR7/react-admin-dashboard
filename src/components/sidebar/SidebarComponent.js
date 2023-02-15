@@ -94,21 +94,21 @@ function SidebarComponent() {
             >
                 <MenuItem
                     id={SLUGS.ideas}
-                    title='Sub Item 1'
+                    title='Sub Objeto 1'
                     level={2}
                     icon={IconAgents}
                     onClick={() => onClick(SLUGS.ideas)}
                 />
                 <MenuItem
                     id={SLUGS.ideasTwo}
-                    title='Sub Item 2'
+                    title='Sub Objeto 2'
                     level={2}
                     icon={IconContacts}
                     onClick={() => onClick(SLUGS.ideasTwo)}
                 />
                 <MenuItem
                     id={SLUGS.ideasThree}
-                    title='Sub Item 3'
+                    title='Sub Objeto 3'
                     level={2}
                     icon={IconArticles}
                     onClick={() => onClick(SLUGS.ideasThree)}
@@ -116,37 +116,37 @@ function SidebarComponent() {
             </MenuItem>
             <MenuItem
                 id={SLUGS.contacts}
-                title='Contacts'
+                title='Contactos'
                 icon={IconContacts}
                 onClick={() => onClick(SLUGS.contacts)}
             />
             <MenuItem
                 id={SLUGS.agents}
-                title='Agents'
+                title='Agentes'
                 icon={IconAgents}
                 onClick={() => onClick(SLUGS.agents)}
             />
             <MenuItem
                 id={SLUGS.articles}
-                title='Articles'
+                title='Articulos'
                 icon={IconArticles}
                 onClick={() => onClick(SLUGS.articles)}
             />
             <MenuItem
                 id={SLUGS.subscription}
-                title='Subscription'
+                title='Suscripción'
                 icon={IconSubscription}
                 onClick={() => onClick(SLUGS.subscription)}
             />
             <div className={classes.separator}></div>
             <MenuItem
                 id={SLUGS.settings}
-                title='Settings'
+                title='Configuración'
                 icon={IconSettings}
                 onClick={() => onClick(SLUGS.settings)}
             />
 
-            <MenuItem id='logout' title='Logout' icon={IconLogout} onClick={logout} />
+            <MenuItem id='logout' title='Cerrar Sesión' icon={IconLogout} onClick={logout} />
         </Menu>
     );
 }

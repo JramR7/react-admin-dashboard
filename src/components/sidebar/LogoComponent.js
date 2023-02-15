@@ -22,7 +22,7 @@ function LogoComponent() {
     return (
         <Row className={classes.container} horizontal='center' vertical='center'>
             <IconLogo />
-            <span className={classes.title}>Pagina de Tomás</span>
+            <span className={classes.title}>Kit del Panel</span>
         </Row>
     );
 }
