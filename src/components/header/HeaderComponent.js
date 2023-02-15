@@ -68,10 +68,10 @@ function HeaderComponent() {
     let title;
     switch (true) {
         case currentItem === SLUGS.dashboard:
-            title = 'Dashboard';
+            title = 'Tittle Change';
             break;
         case [SLUGS.overview, SLUGS.overviewTwo, SLUGS.overviewThree].includes(currentItem):
-            title = 'Overview';
+            title = 'Second Tittle Change';
             break;
         case currentItem === SLUGS.tickets:
             title = 'Tickets';
