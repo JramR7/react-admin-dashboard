@@ -156,7 +156,12 @@ function HeaderComponent() {
                         {
                             label: 'Logout',
                             onClick: () => console.log('logout')
-                        }
+                        },
+                        {
+                            label: 'MODIFIED SECTION',
+                            onClick: () => console.log('modified section')
+                        },
+
                     ]}
                     position={{
                         top: 52,
