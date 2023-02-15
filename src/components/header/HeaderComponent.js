@@ -47,7 +47,7 @@ const useStyles = createUseStyles((theme) => ({
             marginLeft: 50
         },
         '@media (max-width: 468px)': {
-            fontSize: 20
+            fontSize: 50
         }
     },
     iconStyles: {
