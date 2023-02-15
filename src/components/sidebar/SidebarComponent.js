@@ -48,14 +48,14 @@ function SidebarComponent() {
             </div>
             <MenuItem
                 id={SLUGS.dashboard}
-                title='Dashboard'
+                title='Inicio'
                 icon={IconSubscription}
                 onClick={() => onClick(SLUGS.dashboard)}
             />
             <MenuItem
                 id={SLUGS.overview}
                 items={[SLUGS.overviewTwo, SLUGS.overviewThree]}
-                title='Overview'
+                title='Vista General'
                 icon={IconOverview}
             >
                 <MenuItem
