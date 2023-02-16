@@ -48,7 +48,11 @@ function SidebarComponent() {
             </div>
             <MenuItem
                 id={SLUGS.dashboard}
+Feature_ValentinaRamirez_A
                 title='Panel'
+
+                title='Noteboard QUIZ'
+develop
                 icon={IconSubscription}
                 onClick={() => onClick(SLUGS.dashboard)}
             />
@@ -82,7 +86,11 @@ function SidebarComponent() {
             </MenuItem>
             <MenuItem
                 id={SLUGS.tickets}
+Feature_ValentinaRamirez_A
                 title='Tiquetes'
+
+                title='Tickets airplane'
+develop
                 icon={IconTickets}
                 onClick={() => onClick(SLUGS.tickets)}
             />
@@ -116,7 +124,11 @@ function SidebarComponent() {
             </MenuItem>
             <MenuItem
                 id={SLUGS.contacts}
+Feature_ValentinaRamirez_A
                 title='Contactos'
+
+                title='Contacts for call'
+develop
                 icon={IconContacts}
                 onClick={() => onClick(SLUGS.contacts)}
             />
