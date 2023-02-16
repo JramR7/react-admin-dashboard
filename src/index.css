@@ -80,11 +80,11 @@ select {
 }
 
 body {
-    background-color: #f7f8fc;
+    background-color: rgb(233, 237, 255);
     font-family: Muli;
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
     line-height: 26px;
-    color: #424147;
+    color:  black;
 }
