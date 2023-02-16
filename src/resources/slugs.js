@@ -1,6 +1,6 @@
 export default {
     // private
-    dashboard: '/dashboard',
+    dashboard: '/dasboard',
     overview: '/overview',
     overviewTwo: '/overview/two',
     overviewThree: '/overview/three',

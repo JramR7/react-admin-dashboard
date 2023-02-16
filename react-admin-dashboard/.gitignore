@@ -7,7 +7,7 @@
 
 # testing
 /coverage
-react-admin-dashboard/
+
 # production
 /build
 
